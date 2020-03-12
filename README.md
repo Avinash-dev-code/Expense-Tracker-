@@ -28,7 +28,7 @@ Steps to run the app.
 
   
 # Some ScreenShots:
-<img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/tree/master/Screenshots/1st.jpg"
+<img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/blob/master/Screenshots/1st.jpg"
 /><img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/tree/master/Screenshots/2nd.jpg" hspace=24
 /><img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/tree/master/Screenshots/3rd.jpg"
 />
