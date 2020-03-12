@@ -28,7 +28,7 @@ Steps to run the app.
 
   
 # Some ScreenShots:
-
+<div class="Main">
 <div>
     <img src="/Screenshots/1st.jpg" width="200px"</img> 
 </div>
@@ -49,4 +49,5 @@ Steps to run the app.
     <img src="/Screenshots/8th.jpg" width="200px"</img> 
 </div><div>
     <img src="/Screenshots/9th.jpg" width="200px"</img> 
+</div>
 </div>
