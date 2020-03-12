@@ -29,7 +29,7 @@ Steps to run the app.
   
 # Some ScreenShots:
 <img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/blob/master/Screenshots/1st.jpg"
-/>&nbsp<img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/blob/master/Screenshots/2nd.jpg" 
+/><img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/blob/master/Screenshots/2nd.jpg" 
 /><img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/blob/master/Screenshots/3rd.jpg"
 />
 <br>
