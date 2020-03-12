@@ -28,26 +28,22 @@ Steps to run the app.
 
   
 # Some ScreenShots:
-<div class="Main">
+
 <div>
     <img src="/Screenshots/1st.jpg" width="200px"</img> 
-</div>
-<div>
+
+
     <img src="/Screenshots/2nd.jpg" width="200px"</img> 
-</div>
-<div>
-    <img src="/Screenshots/3rd.jpg" width="200px"</img> 
-</div><div>
+
+    <img src="/Screenshots/3rd.jpg" width="200px"</img>
     <img src="/Screenshots/4th.jpg" width="200px"</img> 
-</div><div>
+
     <img src="/Screenshots/5th.jpg" width="200px"</img> 
-</div><div>
+
     <img src="/Screenshots/6th.jpg" width="200px"</img> 
-</div><div>
+
     <img src="/Screenshots/7th.jpg" width="200px"</img> 
-</div><div>
+
     <img src="/Screenshots/8th.jpg" width="200px"</img> 
-</div><div>
-    <img src="/Screenshots/9th.jpg" width="200px"</img> 
-</div>
+   <img src="/Screenshots/9th.jpg" width="200px"</img> 
 </div>
