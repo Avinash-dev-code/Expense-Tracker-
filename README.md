@@ -48,5 +48,4 @@ Steps to run the app.
 />
 
 
-Thanks to Shashankchandak
-https://github.com/shashankchandak/Expense-Manager
+Thanks to <b>Shashankchandak<b>
