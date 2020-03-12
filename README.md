@@ -28,25 +28,18 @@ Steps to run the app.
 
   
 # Some ScreenShots:
-<div>
-    <img src="/Screenshots/1st.jpg" width="200px" margin="1%"</img> 
-
-   <div>
-    <img src="/Screenshots/2nd.jpg" width="200px"></img> 
-   <div>
-    <img src="/Screenshots/3rd.jpg" width="200px"></img>
-<div>
-    <img src="/Screenshots/4th.jpg" width="200px"></img> 
-
-<div>
-    <img src="/Screenshots/5th.jpg" width="200px"></img> 
-<div>
-    <img src="/Screenshots/6th.jpg" width="200px"></img> 
-<div>
-    <img src="/Screenshots/7th.jpg" width="200px"></img> 
-<div>
-    <img src="/Screenshots/8th.jpg" width="200px"></img> 
-<div>
-   <img src="/Screenshots/9th.jpg" width="200px"></img> 
-</div>
-
+<img height=500 width=275 src="Sreenshots/1st.jpg"
+/><img height=500 width=275 src="Sreenshots/2nd.jpg" hspace=24
+/><img height=500 width=275 src="Sreenshots/3rd.jpg"
+/>
+<br>
+<br>
+<br>
+<img height=500 width=275 src="Sreenshots/4th.jpg"
+/><img height=500 width=275 src="Sreenshots/5th.jpg" hspace=24
+/><img height=500 width=275 src="Sreenshots/6th.jpg"
+/>
+<img height=500 width=275 src="Sreenshots/7th.jpg"
+/>
+<img height=500 width=275 src="Sreenshots/8th.jpg"
+/>
