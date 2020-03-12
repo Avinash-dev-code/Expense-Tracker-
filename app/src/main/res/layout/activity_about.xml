@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6200ee"
+    tools:context=".activities.About">
+
+    <ImageView
+        android:layout_width="155dp"
+        android:layout_height="115dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="50dp"
+        app:srcCompat="@drawable/finallogo"
+        android:contentDescription="@string/erfefe" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="243dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="200dp"
+        android:paddingStart="34dp"
+        android:paddingEnd="34dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:text="@string/aboutexpense"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="127dp"
+        android:gravity="center"
+        android:text="@string/connect_with_us"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="12dp">
+
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/facebook"
+            android:contentDescription="@string/dbhdtgbt" />
+
+        <ImageView
+            android:id="@+id/youtube"
+            android:layout_width="73dp"
+            android:layout_height="61dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="75dp"
+            app:srcCompat="@drawable/youtube"
+            android:contentDescription="@string/dfgdg" />
+
+        <ImageView
+            android:id="@+id/twitter"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="45dp"
+            android:contentDescription="@string/dfgd"
+            app:srcCompat="@drawable/twitter" />
+    </FrameLayout>
+
+</RelativeLayout>

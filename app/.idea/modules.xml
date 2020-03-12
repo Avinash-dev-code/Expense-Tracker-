@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Expense-Manager-master.iml" filepath="$PROJECT_DIR$/../Expense-Manager-master.iml" group="Expense-Manager-master" />
+      <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" group="Expense-Manager-master/app" />
+    </modules>
+  </component>
+</project>

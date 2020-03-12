@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200ee</color>
+    <color name="colorPrimaryDark">#8B63CC</color>
+    <color name="colorAccent">#ff5722</color>
+    <color name="black">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+
+    <!--OnBoard-->
+
+    <color name="selected_dot">#6200ee</color>
+    <color name="idle_dot">#8B63CC</color>
+    <color name="ob_header">#4A4A4A</color>
+    <color name="ob_desc">#4A4A4A</color>
+    <color name="primaryTextColor">#2661FA</color>
+
+    <!--colros for card-->
+
+</resources>

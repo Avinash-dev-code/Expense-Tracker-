@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/iv_onboard"
+        android:layout_width="match_parent"
+        android:layout_height="361dp"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/onboardimage"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingTop="30dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dash" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/ob_desc_padding"
+                android:paddingRight="@dimen/ob_desc_padding"
+                android:text="@string/ob_header1"
+                android:textAllCaps="true"
+                android:textColor="@color/ob_header"
+                android:textSize="@dimen/ob_header_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:paddingLeft="@dimen/ob_desc_padding"
+                android:paddingRight="@dimen/ob_desc_padding"
+                android:text="@string/ob_desc1"
+                android:textColor="@color/ob_desc"
+                android:textSize="@dimen/ob_desc_text_size" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

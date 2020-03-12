@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Expense Tracker</string>
+    <string name="ob_header1">Welcome to Expense Tracker</string>
+    <string name="ob_header2">Add your Expenses</string>
+    <string name="ob_header3">see your expense report</string>
+
+    <string name="ob_get_started">GET STARTED</string>
+
+    <string name="ob_desc1">   "Beware of little expenses.A small leak will sink a great ship."</string>
+    <string name="ob_desc2">Expense Tracker helps you to manage your daily expenses</string>
+    <string name="ob_desc3">After add your expense you can check your expense report.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="add_income">Add Income</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="onboardimage">onboardimage</string>
+    <string name="logo">logo</string>
+    <string name="login">Sign in </string>
+    <string name="logins">Login</string>
+    <string name="Close">close</string>
+    <string name="Open">close</string>
+    <string name="aboutexpense">An EXPENSE TRACKER  is a application that helps to keep an accurate record of your money inflow and outflow. Many people in India live on a fixed income, and they find that towards the end of the month they don’t have sufficient money to meet their needs. While this problem can arise due to low salary, invariably it is due to poor money management skills.
+
+People tend to overspend without realizing, and this can prove to be disastrous. Using a daily expense manager can help you keep track of how much you spend every day and on what. At the end of the month, you will have a clear picture where your money is going. This is one of the best ways to get your expenses under control and bring some semblance of order to your finances.</string>
+
+    <string-array name="date_array">
+        <item>All</item>
+        <item>This Week</item>
+        <item>This Month</item>
+
+
+    </string-array>
+    <string name="slogans">“If money management isnt something you enjoy, consider my perspective. I look at managing my money as if it were a part-time job. The time you spend monitoring your finances will pay off. You can make real money by cutting expenses and earning more interest on savings and investments. I would challenge you to find a part-]time job where you could potentially earn as much money for just an hour or two of your time,so start using this app right now.”</string>
+    <string name="signup_login_hint">Already have an account? Sign In</string>
+    <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
+    <string name="next">move to manage your expenses</string>
+    <string name="connect_with_us">connect with us</string>
+    <string name="erfefe">TODOaeff</string>
+    <string name="dbhdtgbt">TODOdthhh</string>
+    <string name="dfgdg">dhxt</string>
+    <string name="dfgd">dfgdr</string>
+    <string name="amount">Amount</string>
+    <string name="date">Date</string>
+    <string name="_11_09_2017">11/09/2017</string>
+    <string name="category">Category</string>
+    <string name="description">Description</string>
+    <string name="enter_email">enter email</string>
+    <string name="enter_password">enter password</string>
+    <string name="forget">Forget</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="retry">Retry</string>
+    <string name="register">Register</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enterpasswordofloginofregisterpage">Enter Password</string>
+    <string name="entermail">Enter Email</string>
+    <string name="signup">signup</string>
+    <string name="forget_password">forget password</string>
+    <string name="here_enter_your_email_id_for_verfication">Here Enter your email id for verfication</string>
+    <string name="enter_a_email_id">Enter a email id</string>
+    <string name="reset_password">reset password</string>
+    <string name="back">back</string>
+    <string name="_01_10_2018_30_1_2018">01/10/2018 - 30/1/2018</string>
+    <string name="_400">400</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="_600">600</string>
+    <string name="_200">200</string>
+    <string name="todo">TODO</string>
+    <string name="_300">-300</string>
+    <string name="_14_09_2018">14/09/2018</string>
+    <string name="food">Food</string>
+    <string name="dominos">Dominos</string>
+    <string name="accout">Accout</string>
+    <string name="tips">Tips</string>
+    <string name="share">Share</string>
+    <string name="about_us">About us</string>
+    <string name="logout">logout</string>
+
+</resources>

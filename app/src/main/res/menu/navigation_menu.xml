@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item
+            android:id="@+id/account"
+            android:icon="@drawable/personicon"
+            android:title="@string/accout" />
+
+
+        <item
+            android:id="@+id/WebView"
+            android:icon="@drawable/helpicon"
+            android:title="@string/tips" />
+
+
+
+
+            <item
+                android:id="@+id/Shareapp"
+                android:icon="@drawable/shareicon"
+                android:title="@string/share" />
+            <item
+                android:id="@+id/Aboutus"
+                android:icon="@drawable/abouticom"
+                android:title="@string/about_us" />
+
+
+    <item
+    android:id="@+id/logout"
+    android:icon="@drawable/logouticon"
+    android:title="@string/logout" />
+
+</menu>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/registerback"
+    tools:context=".activities.Register">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="23dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/loginHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:text="@string/register"
+            app:layout_constraintBottom_toTopOf="@+id/editName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.063"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="245dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="12dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/enter_name"
+            android:inputType="textEmailAddress"
+            android:textColor="#6200ee"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/editEmail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="245dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="200dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/enterpasswordofloginofregisterpage"
+            android:inputType="textPassword"
+            android:textColor="#6200ee"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="245dp"
+            android:layout_height="64dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/entermail"
+            android:inputType="textEmailAddress"
+            android:textColor="#6200ee"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/editPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            android:autofillHints="" />
+
+        <com.spark.submitbutton.SubmitButton
+            android:id="@+id/buttonRegister"
+            android:layout_width="245dp"
+            android:layout_height="107dp"
+
+            android:layout_above="@+id/buttonLogin"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="89dp"
+
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/signup"
+            android:textColor="@color/gray"
+            app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:sub_btn_background="@color/white"
+            app:sub_btn_duration="2500"
+            app:sub_btn_line_color="@color/selected_dot"
+            app:sub_btn_ripple_color="@color/colorAccent"
+            app:sub_btn_tick_color="@color/white" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="328dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:background="@color/fui_transparent"
+            android:gravity="center|right"
+            android:text="@string/signup_login_hint"
+            android:textAllCaps="false"
+            android:textColor="#6200ee"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.947"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "862511163500",
+    "firebase_url": "https://expense-tracker-d5172.firebaseio.com",
+    "project_id": "expense-tracker-d5172",
+    "storage_bucket": "expense-tracker-d5172.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862511163500:android:a2e0fcc79b55c183b35049",
+        "android_client_info": {
+          "package_name": "com.avinash.expensetracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "862511163500-sk3hgi3u2s232pcvmgbq1fkj8a49l463.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.avinash.expensetracker",
+            "certificate_hash": "c469b992276a764746d6c4fc5d31b2193c189582"
+          }
+        },
+        {
+          "client_id": "862511163500-ovrapthd12frs6otpc02rge8psarfhmi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1ckFho78kME98HvDXFJkVSbbm1oYxitc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "862511163500-ovrapthd12frs6otpc02rge8psarfhmi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862511163500:android:b15d1cdb0da2fa29b35049",
+        "android_client_info": {
+          "package_name": "com.shashank.expensemanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "862511163500-c5hjkpgg7vilam85kusdsvbc97jbrfpc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shashank.expensemanager",
+            "certificate_hash": "c469b992276a764746d6c4fc5d31b2193c189582"
+          }
+        },
+        {
+          "client_id": "862511163500-ovrapthd12frs6otpc02rge8psarfhmi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1ckFho78kME98HvDXFJkVSbbm1oYxitc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "862511163500-ovrapthd12frs6otpc02rge8psarfhmi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
