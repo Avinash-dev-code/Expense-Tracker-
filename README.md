@@ -29,7 +29,7 @@ Steps to run the app.
   
 # Some ScreenShots:
 <div>
-    <img src="/Screenshots/1st.jpg" width="200px"</img> 
+    <img src="/Screenshots/1st.jpg" width="200px" margin="1%"</img> 
 
    <div>
     <img src="/Screenshots/2nd.jpg" width="200px"></img> 
