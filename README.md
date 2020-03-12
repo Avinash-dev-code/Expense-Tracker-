@@ -30,5 +30,5 @@ Steps to run the app.
 # Some ScreenShots:
 
 <div align="center">
-    <img src="/screenshots/1st.jpg" width="400px"</img> 
+    <img src="/Screenshots/1st.jpg" width="400px"</img> 
 </div>
