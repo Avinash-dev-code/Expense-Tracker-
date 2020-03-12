@@ -29,17 +29,19 @@ Steps to run the app.
   
 # Some ScreenShots:
 <img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/blob/master/Screenshots/1st.jpg"
-/><img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/tree/master/Screenshots/2nd.jpg" hspace=24
-/><img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/tree/master/Screenshots/3rd.jpg"
+/><img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/blob/master/Screenshots/2nd.jpg" hspace=24
+/><img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/blob/master/Screenshots/3rd.jpg"
 />
 <br>
 <br>
 <br>
-<img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/tree/master/Screenshots/4th.jpg"
-/><img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/tree/master/Screenshots/5th.jpg" hspace=24
-/><img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/tree/master/Screenshots/6th.jpg"
+<img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/blob/master/Screenshots/4th.jpg"
+/><img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/blob/master/Screenshots/5th.jpg" hspace=24
+/><img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/blob/master/Screenshots/6th.jpg"
 />
-<img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/tree/master/Screenshots/7th.jpg"
+<img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/blob/master/Screenshots/7th.jpg"
 />
-<img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/tree/master/Screenshots/8th.jpg"
+<img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/blob/master/Screenshots/8th.jpg"
+/>
+<img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/blob/master/Screenshots/9th.jpg"
 />
