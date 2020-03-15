@@ -29,7 +29,7 @@
             style="@style/loginHeader"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="160dp"
+            android:layout_marginTop="145dp"
             android:text="@string/register"
             app:layout_constraintBottom_toTopOf="@+id/editName"
             app:layout_constraintEnd_toEndOf="parent"

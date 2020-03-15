@@ -26,15 +26,17 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.spark.submitbutton.SubmitButton;
 
+import java.util.jar.Attributes;
+
 
 public class login extends AppCompatActivity {
-    EditText Email, Password;
+    EditText Email, Password,Nameid;
     SubmitButton LogInButton;
     Button RegisterButton;
     FirebaseAuth mAuth;
     FirebaseAuth.AuthStateListener mAuthListner;
     FirebaseUser mUser;
-    String email, password;
+    String email, password,nameid;
 
 
     ProgressDialog dialog;
@@ -49,6 +51,7 @@ public class login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         LogInButton = (SubmitButton) findViewById(R.id.buttonLogin);
         Button Reset=(Button)findViewById(R.id.btn_reset_password);
+         Nameid = (EditText)findViewById(R.id.namel);
 
 
 
@@ -138,14 +141,20 @@ public class login extends AppCompatActivity {
 
     private void userSign() {
         email = Email.getText().toString().trim();
+        nameid = Nameid.getText().toString().trim();
         password = Password.getText().toString().trim();
-        if (TextUtils.isEmpty(email)) {
-            Toast.makeText(login.this, "Enter the correct Email", Toast.LENGTH_SHORT).show();
+        if (TextUtils.isEmpty(nameid)) {
+            Toast.makeText(login.this, "Enter the correct name", Toast.LENGTH_SHORT).show();
             return;
-        } else if (TextUtils.isEmpty(password)) {
+        } else if (TextUtils.isEmpty(email)) {
+            Toast.makeText(login.this, "Enter the correct email", Toast.LENGTH_SHORT).show();
+            return;
+        }else if
+        (TextUtils.isEmpty(password)) {
             Toast.makeText(login.this, "Enter the correct password", Toast.LENGTH_SHORT).show();
             return;
         }
+
         dialog.setMessage("Loging in please wait...");
         dialog.setIndeterminate(true);
         dialog.show();
@@ -179,12 +188,19 @@ public class login extends AppCompatActivity {
         }
         else {
             Email.getText().clear();
+            Nameid.getText().clear();
 
             Password.getText().clear();
             SharedPreferences sharedPref = getSharedPreferences("myKey", MODE_PRIVATE);
             SharedPreferences.Editor editor = sharedPref.edit();
-            editor.putString("firebasekey", email);
+            editor.putString("firebasekey", nameid);
+
             editor.apply();
+            SharedPreferences sharedPrefs = getSharedPreferences("myKeysecond", MODE_PRIVATE);
+            SharedPreferences.Editor editors = sharedPrefs.edit();
+            editors.putString("firebasekeysecond", email);
+
+            editors.apply();
             Intent intent = new Intent(login.this,ProfilePage.class);
             startActivity(intent);
             finish();

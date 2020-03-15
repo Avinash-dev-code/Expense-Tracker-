@@ -1,14 +1,21 @@
 package com.avinash.expensetracker.activities;
 
 
+import android.annotation.SuppressLint;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Build;
+import android.os.Build.VERSION_CODES;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
@@ -17,7 +24,7 @@ import com.avinash.expensetracker.R;
 
 public class ProfilePage extends AppCompatActivity {
 
-    TextView Email;
+    TextView Nameid,Emailid;
 
     String EmailHolder;
     SharedPreferences sharedPref;
@@ -30,42 +37,60 @@ public class ProfilePage extends AppCompatActivity {
 
         Button b1=(Button)findViewById(R.id.button1);
 
-        Email = (TextView) findViewById(R.id.emm);
+        Nameid = (TextView) findViewById(R.id.emm);
+        Emailid = (TextView) findViewById(R.id.emailid);
 
         SharedPreferences sharedPreferences = getSharedPreferences("myKey", MODE_PRIVATE);
         final String value = sharedPreferences.getString("firebasekey","");
-        Email.setText(value);
+        Nameid.setText(value);
+        SharedPreferences sharedPreferencesS = getSharedPreferences("myKeysecond", MODE_PRIVATE);
+        final String values = sharedPreferencesS.getString("firebasekeysecond","");
+        Emailid.setText(values);
 
 
 
 
         b1.setOnClickListener(new View.OnClickListener() {
+
+            @SuppressLint("NewApi")
             @Override
             public void onClick(View v) {
 
 
+
                 Intent main=new Intent(ProfilePage.this,MainActivity.class);
                 startActivity(main);
-                NotificationManagerCompat managerCompat=NotificationManagerCompat.from(ProfilePage.this);
-                NotificationCompat.Builder noti=new NotificationCompat.Builder(ProfilePage.this);
-                noti.setContentTitle("Welcome"+" "+value);
-                noti.setContentText("Manage your incomes and expense ");
-                noti.setSmallIcon(android.R.drawable.star_big_on);
+                    NotificationManagerCompat  mNotificationManager =NotificationManagerCompat.from(ProfilePage.this);
 
-                Intent i1=new Intent(ProfilePage.this,MainActivity.class);
-                PendingIntent pd=PendingIntent.getActivities(ProfilePage.this,1, new Intent[]{i1},0);
-                noti.setContentIntent(pd);
-                noti.setAutoCancel(true);
-                noti.setDefaults(NotificationCompat.DEFAULT_ALL)
+                    if (Build.VERSION.SDK_INT >= VERSION_CODES.O) {
+                        NotificationChannel channel = new NotificationChannel("YOUR_CHANNEL_ID",
+                                "YOUR_CHANNEL_NAME",
+                                NotificationManager.IMPORTANCE_DEFAULT);
+                        channel.setDescription("YOUR_NOTIFICATION_CHANNEL_DISCRIPTION");
+                        mNotificationManager.createNotificationChannel(channel);
+                    }
+                    NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(getApplicationContext(), "YOUR_CHANNEL_ID")
+                            .setSmallIcon(R.drawable.helpicon); // notification icon
+                            mBuilder.setContentTitle("Welcome"+" "+value); // title for notification
+                            mBuilder.setContentText("Manage your incomes and expense ");// message for notification
+                            mBuilder.setAutoCancel(true); // clear notification after click
+                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                    PendingIntent pi = PendingIntent.getActivity(ProfilePage.this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+                    mBuilder.setContentIntent(pi);
+                mBuilder.setAutoCancel(true);
+                mBuilder.setDefaults(NotificationCompat.DEFAULT_ALL)
 
                         .setPriority(NotificationCompat.PRIORITY_HIGH);
 
-                managerCompat.areNotificationsEnabled();
-                managerCompat.notify(1,noti.build());
+                mNotificationManager.areNotificationsEnabled();
+                mNotificationManager.notify(1,mBuilder.build());
                 finish();
 
 
             }
+
+
+
         });
 
     }

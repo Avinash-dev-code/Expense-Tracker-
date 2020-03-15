@@ -76,7 +76,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
             Toast.makeText(Register.this, "Enter Password", Toast.LENGTH_SHORT).show();
             return;
         }else if (Password.length()<6){
-            Toast.makeText(Register.this,"Passwor must be greater then 6 digit", Toast.LENGTH_SHORT).show();
+            Toast.makeText(Register.this,"Password must be greater then 6 digit", Toast.LENGTH_SHORT).show();
             return;
         }
         mDialog.setMessage("Creating User please wait...");
@@ -88,8 +88,10 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
                 if (task.isSuccessful()){
                     sendEmailVerification();
                     mDialog.dismiss();
+
                     OnAuth(task.getResult().getUser());
                     mAuth.signOut();
+                    finish();
                 }else{
                     Toast.makeText(Register.this,"error on creating user", Toast.LENGTH_SHORT).show();
                 }
