@@ -8,6 +8,7 @@ Features:
   1. Add your expense/income the next time you spend/earn cash and save category of expense.
   2. View your cash transactions at any time systematically.
   3. Sort transactions by month and week.
+  4. Notify you if you cross limit from your income
 Start with this app to inculcate a systematic approach in your life.
 
 Steps:1Create project in firebase console and add this project.
