@@ -11,8 +11,8 @@ Features:
   4. Notify you if you cross limit from your income
 Start with this app to inculcate a systematic approach in your life.
 
-Steps:1Create project in firebase console and add this project.
-.Code comprises of three Activities.
+Steps:1 Create project in firebase console and add this project.<br>
+Step:2 Code comprises of three Activities.
   	a.login.java(main)
 	b.Register.java
 	c.ProfilePage.java
