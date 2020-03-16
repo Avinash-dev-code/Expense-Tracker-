@@ -2,7 +2,15 @@ package com.avinash.expensetracker.fragments;
 
 
 import android.annotation.SuppressLint;
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 
 import android.util.Log;
@@ -16,8 +24,12 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 import androidx.fragment.app.Fragment;
 
+import com.avinash.expensetracker.activities.MainActivity;
+import com.avinash.expensetracker.activities.ProfilePage;
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.data.PieData;
@@ -40,7 +52,9 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
+import static android.content.Context.MODE_PRIVATE;
 import static com.avinash.expensetracker.activities.MainActivity.fab;
+import static com.firebase.ui.auth.AuthUI.getApplicationContext;
 
 
 public class BalanceFragment extends Fragment implements AdapterView.OnItemSelectedListener{
@@ -75,14 +89,14 @@ public class BalanceFragment extends Fragment implements AdapterView.OnItemSelec
         incomeTv = view.findViewById(R.id.amountForIncomeTextView);
 
         dateTv = view.findViewById(R.id.dateTextView);
+
         expenseList=new ArrayList<>();
+
         getAllBalanceAmount();
         setupPieChart();
         return view;
 
-        //TODO 1.Change constraint to linear and change entire layout
-        //TODO 2.Align piechart properly with label
-        //TODO 3.See if can opytimize queries and spinner state and read about fragment lifecycle
+
 
     }
 
@@ -281,6 +295,7 @@ public class BalanceFragment extends Fragment implements AdapterView.OnItemSelec
 
     private void getAllBalanceAmount(){
 
+
         //get date when first transaction date and todays date
        AppExecutors.getInstance().diskIO().execute(new Runnable() {
            @Override
@@ -305,6 +320,40 @@ public class BalanceFragment extends Fragment implements AdapterView.OnItemSelec
                 expenseAmount = expense;
                 int balance = income - expense;
                 balanceAmount = balance;
+                if(balance<0.0) {
+
+                    NotificationManagerCompat  mNotificationManager =NotificationManagerCompat.from(getContext());
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                        NotificationChannel channel = new NotificationChannel("YOUR_CHANNEL_ID",
+                                "YOUR_CHANNEL_NAME",
+                                NotificationManager.IMPORTANCE_DEFAULT);
+                        channel.setDescription("YOUR_NOTIFICATION_CHANNEL_DISCRIPTION");
+                        mNotificationManager.createNotificationChannel(channel);
+                    }
+                    NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(getContext(), "YOUR_CHANNEL_ID")
+                                    .setContentTitle(getResources().getString(R.string.app_name))
+                                    .setContentText("The amount of income you put in is over, so please control your Expenses ")
+                                    .setSmallIcon(R.drawable.warningmessage);
+
+
+
+                    NotificationManagerCompat notificationManager =
+                            NotificationManagerCompat.from(getContext());
+
+                    mBuilder.setAutoCancel(true);
+                    mBuilder.setDefaults(NotificationCompat.DEFAULT_ALL)
+
+                            .setPriority(NotificationCompat.PRIORITY_HIGH);
+
+
+                    mNotificationManager.areNotificationsEnabled();
+                    notificationManager.notify(2, mBuilder.build());
+                }
+                else {
+
+                }
+
+
             }
         });
         AppExecutors.getInstance().mainThread().execute(new Runnable() {
@@ -313,11 +362,15 @@ public class BalanceFragment extends Fragment implements AdapterView.OnItemSelec
                 balanceTv.setText(String.valueOf(balanceAmount)+" \u20B9");
                 incomeTv.setText(String.valueOf(incomeAmount)+" \u20B9");
                 expenseTv.setText(String.valueOf(expenseAmount)+" \u20B9");
+
             }
         });
 
 
+
     }
+
+
 
     private void getWeekBalanceAmount() throws ParseException {
         Calendar calendar;
