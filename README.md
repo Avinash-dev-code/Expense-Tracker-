@@ -11,21 +11,22 @@ Features:
   4. Notify you if you cross limit from your income
 Start with this app to inculcate a systematic approach in your life.
 
+For Firebase Authentication steps are below:<br>
 Steps:1 Create project in firebase console and add this project.<br>
-Step:2 Code comprises of three Activities.
-  	a.login.java(main)
-	b.Register.java
-	c.ProfilePage.java
-3.It comprises of three layouts respectively.
-	a.activity_main.xml
-	b.activity_register.xml
-	c.activity_profile_page.xml
+Step:2 Code comprises of three Activities.<br>
+  	a.login.java(main)<br>
+	b.Register.java<br>
+	c.ProfilePage.java<br>
+3.It comprises of three layouts respectively.<br>
+	a.activity_main.xml<br>
+	b.activity_register.xml<br>
+	c.activity_profile_page.xml<br>
 **********************************************************************************
-Steps to run the app.
-1.Signup using the asked details and full fill all the requirements.
-2.check the email ,if the mail is not present in inbox check in AllMails option of the Email id or check Internet connection.
-3. verify the email address by clicking on the link provided.
-4.Now sign in with the details you provided.
+Steps to run the app.<br>
+1.Signup using the asked details and full fill all the requirements.<br>
+2.check the email ,if the mail is not present in inbox check in AllMails option of the Email id or check Internet connection.<br>
+3. verify the email address by clicking on the link provided.<br>
+4.Now sign in with the details you provided.<br>
 
   
 # Some ScreenShots:
