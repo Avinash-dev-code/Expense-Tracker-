@@ -28,10 +28,13 @@
         <TextView
             android:id="@+id/textView2"
             style="@style/loginHeader"
-            android:layout_width="93dp"
-            android:layout_height="44dp"
-            android:layout_marginTop="128dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="45dp"
             android:text="@string/logins"
+            android:textSize="36sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.128"
             app:layout_constraintStart_toStartOf="parent"
@@ -41,17 +44,21 @@
             android:id="@+id/editEmail"
 
 
-            android:layout_width="240dp"
+            android:layout_width="250dp"
 
+            android:background="@drawable/shape"
             android:layout_height="64dp"
             android:layout_marginTop="252dp"
+            android:textColorHint="#ffffff"
+
 
             android:gravity="center"
-
+            android:drawableLeft="@drawable/fui_ic_mail_white_24dp"
+            android:padding="13dp"
             android:hint="@string/enter_email"
             android:importantForAutofill="no"
             android:inputType="textEmailAddress"
-            android:textColor="#6200ee"
+            android:textColor="#fff"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.508"
             app:layout_constraintStart_toStartOf="parent"
@@ -59,17 +66,22 @@
 
         <EditText
             android:id="@+id/editPassword"
-            android:layout_width="240dp"
+            android:layout_width="250dp"
             android:layout_height="64dp"
 
+
             android:layout_marginTop="17dp"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
             android:layout_marginBottom="10dp"
             android:ems="10"
             android:gravity="center"
             android:hint="@string/enter_password"
+            android:padding="13dp"
             android:importantForAutofill="no"
             android:inputType="textPassword"
-            android:textColor="#6200ee"
+            android:background="@drawable/shape"
+            android:textColor="#ffffff"
+            android:textColorHint="#fff"
             app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
             app:layout_constraintEnd_toEndOf="@+id/editEmail"
             app:layout_constraintHorizontal_bias="0.0"
@@ -84,14 +96,15 @@
             android:layout_width="200dp"
             android:layout_height="96dp"
 
-
+            android:layout_marginStart="94dp"
+            android:layout_marginEnd="94dp"
             android:text="@string/login"
             android:textAllCaps="false"
             android:textColor="@color/gray"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-
-            app:layout_constraintHorizontal_bias="0.448"
+            app:layout_constraintHorizontal_bias="0.52"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.759"
@@ -107,7 +120,7 @@
             android:layout_width="wrap_content"
 
             android:layout_height="wrap_content"
-            android:layout_marginBottom="92dp"
+            android:layout_marginBottom="82dp"
             android:gravity="center"
             android:text="@string/forget"
             android:textAllCaps="false"
@@ -127,7 +140,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="44dp"
+            android:layout_marginBottom="34dp"
             android:text="@string/login_signup_hint"
             android:textAllCaps="false"
             android:textColor="#6200ee"
@@ -139,12 +152,18 @@
 
         <EditText
             android:id="@+id/namel"
-            android:layout_width="240dp"
+            android:layout_width="250dp"
             android:layout_height="64dp"
             android:layout_marginBottom="10dp"
+            android:textColor="#fff"
             android:gravity="center"
             android:hint="enter your name"
-            android:textColor="#6200ee"
+            android:textColorHint="#ffffff"
+
+
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:background="@drawable/shape"
+            android:padding="13dp"
             app:layout_constraintBottom_toTopOf="@+id/editEmail"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
