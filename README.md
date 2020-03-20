@@ -35,13 +35,10 @@ Steps to run the app.<br>
 /><img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/blob/master/Screenshots/3rd.jpg"
 />
 <br>
-<br>
-<br>
+
 <img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/blob/master/Screenshots/login.jpeg"
 /><img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/blob/master/Screenshots/register.jpeg" 
-/><img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/blob/master/Screenshots/reset.jpeg"
-
-/>
+/><img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/blob/master/Screenshots/reset.jpeg"/>
 <br>
 <img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/blob/master/Screenshots/6th.jpg"
 />
