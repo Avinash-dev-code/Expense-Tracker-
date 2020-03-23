@@ -80,7 +80,8 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
 
         dl.addDrawerListener(t);
         t.syncState();
-
+           MediaPlayer mp=MediaPlayer.create(getApplicationContext(),R.raw.sound);
+        mp.start();
 
 
 
