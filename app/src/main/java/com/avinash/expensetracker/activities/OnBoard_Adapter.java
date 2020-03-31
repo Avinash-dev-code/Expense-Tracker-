@@ -16,9 +16,6 @@ import com.avinash.expensetracker.R;
 import java.util.ArrayList;
 
 
-/**
- * Created by Jaison
- */
 
 
 class OnBoard_Adapter extends PagerAdapter {

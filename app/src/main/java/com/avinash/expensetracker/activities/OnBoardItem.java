@@ -1,8 +1,5 @@
 package com.avinash.expensetracker.activities;
 
-/**
- * Created by Jaison
- */
 
 public class OnBoardItem
 {

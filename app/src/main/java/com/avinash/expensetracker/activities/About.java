@@ -4,11 +4,16 @@ import android.content.Intent;
 import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.avinash.expensetracker.R;
@@ -24,6 +29,11 @@ public class About extends AppCompatActivity {
         fb=(ImageView)findViewById(R.id.facebook);
         yt=(ImageView)findViewById(R.id.youtube);
         twt=(ImageView)findViewById(R.id.twitter);
+        TextView scrollingtext=(TextView)findViewById(R.id.scrollingtext);
+        scrollingtext.setSelected(true);
+        scrollingtext.startAnimation((Animation) AnimationUtils.loadAnimation(this,R.anim.scrollingtext));
+
+
 
         fb.setOnClickListener(new View.OnClickListener() {
             @Override

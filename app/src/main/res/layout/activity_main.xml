@@ -15,6 +15,21 @@
 
         android:background="#fff">
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarmain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#6200ee"
+
+
+            android:theme="@style/DrawerHamburgerStyle"
+            app:navigationIcon="@drawable/ic_dehaze_black_24dp"
+            app:title="@string/app_name"
+            app:titleTextColor="#fff" >
+           
+
+        </androidx.appcompat.widget.Toolbar>
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabs"
@@ -31,7 +46,9 @@
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/container"
             android:layout_width="match_parent"
-            android:layout_height="543dp"
+            android:layout_height="553dp"
+            android:background="#ffffff"
+            android:layout_marginTop="57dp"
             android:overScrollMode="ifContentScrolls">
 
         </androidx.viewpager.widget.ViewPager>
@@ -40,9 +57,11 @@
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
             android:layout_gravity="center|bottom"
             android:layout_margin="@dimen/fab_margin"
-            app:srcCompat="@android:drawable/ic_input_add" />
+            android:background="@drawable/ic_star_black_24dp"
+            app:srcCompat="@drawable/ic_star_black_24dp" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
     <!-- Container for the rest of the screen - Below the Toolbar -->
@@ -54,9 +73,18 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        app:itemIconTint="#000000"
+
+
+        android:background="#ffffff"
+
+
+        app:itemHorizontalPadding="13dp"
+
+
         android:theme="@style/Theme.AppCompat.Light"
-        app:headerLayout="@layout/nav_header_layout"
         app:itemTextColor="#6200ee"
+        app:headerLayout="@layout/nav_header_layout"
         app:menu="@menu/navigation_menu">
 
     </com.google.android.material.navigation.NavigationView>

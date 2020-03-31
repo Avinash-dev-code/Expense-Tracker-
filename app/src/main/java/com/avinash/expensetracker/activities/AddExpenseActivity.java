@@ -2,6 +2,7 @@ package com.avinash.expensetracker.activities;
 
 import android.app.DatePickerDialog;
 
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,6 +19,8 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -64,12 +67,11 @@ public class AddExpenseActivity extends AppCompatActivity {
     private static final String LOG_TAG = AddExpenseActivity.class.getSimpleName();
 
 
-    //These variables contain data which will be stored permanently on hitting save button
     int amount;
-    String categoryOfExpense;       //This parameter is to decide category in a transaction
-    String categoryOfTransaction;  //This parameter to decide whether it is income and expense
+    String categoryOfExpense;
+    String categoryOfTransaction;
 
-    //Variable to keep track from where it came to this activity
+
     String intentFrom;
 
     TransactionViewModel transactionViewModel;
@@ -101,7 +103,7 @@ public class AddExpenseActivity extends AppCompatActivity {
         myCalendar = Calendar.getInstance();
         setDateToTextView();
 
-        //First task here is to determine from where this activity is launched from the 4 possibilities
+
 
         Intent intent = getIntent();
 
@@ -114,6 +116,7 @@ public class AddExpenseActivity extends AppCompatActivity {
             categorySpinner.setClickable(false);
             categorySpinner.setEnabled(false);
             categorySpinner.setAdapter(new ArrayAdapter<>(AddExpenseActivity.this, android.R.layout.simple_list_item_1, categories));
+
 
         } else if (intentFrom.equals(Constants.addExpenseString)) {
             categoryOfTransaction = Constants.expenseCategory;
@@ -211,35 +214,7 @@ public class AddExpenseActivity extends AppCompatActivity {
         datePickerDialog.getDatePicker().setMaxDate(System.currentTimeMillis());
         datePickerDialog.show();
 
-        //In this method not able to set max date
-        /*new DatePickerDialog(AddExpenseActivity.this, new DatePickerDialog.OnDateSetListener() {
-            @Override
-            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                myCalendar.set(Calendar.YEAR, year);
-                myCalendar.set(Calendar.MONTH, month);
-                myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-                setDateToTextView();
-            }
-        }, myCalendar.get(Calendar.YEAR), myCalendar.get(Calendar.MONTH), myCalendar.get(Calendar.DAY_OF_MONTH)
-        ).show();*/
 
-        //This methode requires android n
-       /* if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-            datePickerDialog = new DatePickerDialog(AddExpenseActivity.this);
-
-            datePickerDialog.setOnDateSetListener(new DatePickerDialog.OnDateSetListener() {
-                @Override
-                public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                    myCalendar.set(Calendar.YEAR, year);
-                    myCalendar.set(Calendar.MONTH, month);
-                    myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-                    setDateToTextView();
-                }
-            });
-
-            datePickerDialog.getDatePicker().setMaxDate(System.currentTimeMillis());
-            datePickerDialog.show();
-        }*/
 
     }
 
@@ -273,7 +248,6 @@ public class AddExpenseActivity extends AppCompatActivity {
                 finish();
                 break;
             case R.id.saveButton:
-                // COMPLETED: 10-09-2018 1.Retrieve and Save data to database and also update the recycler view
 
 
                 if (amountTextInputEditText.getText().toString().isEmpty()

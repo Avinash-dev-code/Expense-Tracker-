@@ -47,7 +47,7 @@
             android:autofillHints=""
             android:background="@drawable/shape"
 
-            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawableStart="@drawable/ic_person_black_24dp"
             android:ems="10"
             android:gravity="center"
 
@@ -69,7 +69,7 @@
             android:layout_marginTop="16dp"
             android:autofillHints=""
             android:background="@drawable/shape"
-            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawableStart="@drawable/ic_lock_black_24dp"
             android:ems="10"
             android:gravity="center"
 
@@ -93,7 +93,7 @@
             android:layout_marginTop="16dp"
             android:autofillHints=""
             android:background="@drawable/shape"
-            android:drawableLeft="@drawable/fui_ic_mail_white_24dp"
+            android:drawableStart="@drawable/fui_ic_mail_white_24dp"
             android:ems="10"
 
             android:gravity="center"
@@ -109,42 +109,43 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editName" />
 
-        <com.spark.submitbutton.SubmitButton
-            android:id="@+id/buttonRegister"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="107dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            android:layout_above="@+id/buttonLogin"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="84dp"
+            <com.spark.submitbutton.SubmitButton
+                android:id="@+id/buttonRegister"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
 
-            android:layout_marginEnd="84dp"
-            android:text="@string/signup"
-            android:textColor="@color/gray"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.785"
-            app:sub_btn_background="@color/white"
-            app:sub_btn_duration="2500"
-            app:sub_btn_line_color="@color/selected_dot"
-            app:sub_btn_ripple_color="@color/colorAccent"
-            app:sub_btn_tick_color="@color/white" />
+                android:layout_marginStart="80dp"
+
+                android:layout_marginTop="430dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginBottom="1dp"
+                android:text="@string/signup"
+                android:textColor="@color/gray"
+                app:sub_btn_background="@color/white"
+                app:sub_btn_duration="2500"
+                app:sub_btn_line_color="@color/selected_dot"
+                app:sub_btn_ripple_color="@color/colorAccent"
+                app:sub_btn_tick_color="@color/white" />
+        </LinearLayout>
 
         <Button
             android:id="@+id/buttonLogin"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="328dp"
-            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginEnd="23dp"
             android:layout_marginBottom="20dp"
             android:background="@color/fui_transparent"
-            android:gravity="center|right"
+            android:gravity="center"
             android:text="@string/signup_login_hint"
             android:textAllCaps="false"
             android:textColor="#6200ee"

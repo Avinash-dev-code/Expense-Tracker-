@@ -63,7 +63,6 @@ public class OnBoardingActivity extends AppCompatActivity {
             @Override
             public void onPageSelected(int position) {
 
-                // Change the current position intimation
 
                 for (int i = 0; i < dotsCount; i++) {
                     dots[i].setImageDrawable(ContextCompat.getDrawable(OnBoardingActivity.this, R.drawable.non_selected_item_dot));
@@ -103,7 +102,6 @@ public class OnBoardingActivity extends AppCompatActivity {
 
     }
 
-    // Load data into the viewpager
 
     public void loadData() {
 
@@ -152,7 +150,6 @@ public class OnBoardingActivity extends AppCompatActivity {
 
     }
 
-    // Button Topdown animation
 
     public void hide_animation() {
         Animation hide = AnimationUtils.loadAnimation(this, R.anim.slide_down_anim);

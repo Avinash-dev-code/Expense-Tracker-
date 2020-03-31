@@ -68,6 +68,15 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
+                <Spinner
+                    android:id="@+id/categorySpinner"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="10dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -77,15 +86,6 @@
                     android:padding="4dp"
                     android:text="@string/category"
                     android:textSize="18sp" />
-
-                <Spinner
-                    android:id="@+id/categorySpinner"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="23dp"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginEnd="30dp"
-                    android:layout_marginBottom="10dp" />
 
             </LinearLayout>
 

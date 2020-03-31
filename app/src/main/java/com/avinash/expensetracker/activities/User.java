@@ -1,8 +1,5 @@
 package com.avinash.expensetracker.activities;
 
-/**
- * Created by shiva on 31-01-2018.
- */
 
 class User {
     String Displayname;

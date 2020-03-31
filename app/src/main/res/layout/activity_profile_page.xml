@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,81 +7,98 @@
     android:background="#ffffff"
     tools:context=".activities.ProfilePage">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
 
-        <pl.droidsonroids.gif.GifImageView
-            android:layout_width="173dp"
-            android:layout_height="151dp"
-            android:layout_marginStart="110dp"
-            android:layout_marginTop="49dp"
-            android:layout_marginEnd="128dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/profile"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.49"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    </LinearLayout>
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView2"
+        android:layout_width="173dp"
+        android:layout_height="151dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="128dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/emm"
         android:layout_width="match_parent"
-        android:layout_height="41dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="199dp"
-        android:layout_marginBottom="495dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:drawableStart="@drawable/blackpersonicon"
         android:gravity="center"
-        android:textColor="#000"
+        android:padding="5dp"
+        android:textColor="#000000"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/gifImageView2" />
+
+    <TextView
+        android:id="@+id/emailid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:drawableStart="@drawable/emailblack"
+        android:gravity="center"
+        android:padding="9dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emm" />
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="231dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="123dp"
-        android:layout_marginBottom="124dp"
-        android:orientation="vertical">
+        android:layout_width="wrap_content"
+        android:layout_height="249dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/button1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailid"
+        app:layout_constraintVertical_bias="0.48000002">
 
-        <TextView
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingStart="9dp"
-            android:paddingEnd="9dp"
-            android:text="@string/slogans"
-            android:textSize="19sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/emm" />
+            android:orientation="vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:paddingStart="9dp"
+                android:paddingEnd="9dp"
+                android:text="@string/slogans"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+        </LinearLayout>
     </ScrollView>
 
     <Button
         android:id="@+id/button1"
         style="@android:style/Widget.DeviceDefault.Button.Borderless"
-        android:layout_width="239dp"
-        android:layout_height="46dp"
-        android:layout_alignParentBottom="true"
+        android:layout_width="188dp"
+        android:layout_height="50dp"
         android:layout_marginStart="88dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="85dp"
-        android:layout_marginBottom="34dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="23dp"
         android:background="@drawable/gredient"
         android:text="@string/next"
-        android:textColor="#fff"
+        android:textColor="#190303"
         android:textSize="12sp"
+
+        android:theme="@android:style/Widget.DeviceDefault.Light.ImageButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-</RelativeLayout>

@@ -28,7 +28,7 @@ import java.util.Date;
 
 public class Register extends AppCompatActivity implements View.OnClickListener{
     EditText name,email,password;
-     SubmitButton mRegisterbtn;
+    SubmitButton mRegisterbtn;
     TextView mLoginPageBack;
     FirebaseAuth mAuth;
     DatabaseReference mdatabase;
@@ -43,7 +43,6 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
         password = (EditText)findViewById(R.id.editPassword);
         mRegisterbtn = (SubmitButton)findViewById(R.id.buttonRegister);
         mLoginPageBack = (TextView)findViewById(R.id.buttonLogin);
-        // for authentication using FirebaseAuth.
         mAuth = FirebaseAuth.getInstance();
         mRegisterbtn.setOnClickListener(this);
         mLoginPageBack.setOnClickListener(this);
@@ -57,7 +56,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
         if (v==mRegisterbtn){
             UserRegister();
         }else if (v== mLoginPageBack){
-        startActivity(new Intent(Register.this,login.class));
+            startActivity(new Intent(Register.this,login.class));
         }
     }
 
@@ -82,6 +81,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
         mDialog.setMessage("Creating User please wait...");
         mDialog.setCanceledOnTouchOutside(false);
         mDialog.show();
+
         mAuth.createUserWithEmailAndPassword(Email,Password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -98,7 +98,6 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
             }
         });
     }
-//Email verification code using FirebaseUser object and using isSucccessful()function.
     private void sendEmailVerification() {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if (user!=null){

@@ -3,6 +3,7 @@ package com.avinash.expensetracker.activities;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Network;
 import android.os.Bundle;
 
 import android.os.Parcelable;
@@ -51,7 +52,7 @@ public class login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         LogInButton = (SubmitButton) findViewById(R.id.buttonLogin);
         Button Reset=(Button)findViewById(R.id.btn_reset_password);
-         Nameid = (EditText)findViewById(R.id.namel);
+        Nameid = (EditText)findViewById(R.id.namel);
 
 
 
@@ -77,14 +78,11 @@ public class login extends AppCompatActivity {
 
             }
         };
-        // LogInButton.setOnClickListener((View.OnClickListener) this);
-        //RegisterButton.setOnClickListener((View.OnClickListener) this);
-        //Adding click listener to log in button.
+
         LogInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                // Calling EditText is empty or no method.
                 userSign();
 
 
@@ -94,19 +92,16 @@ public class login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                // Opening new user registration activity using intent on button click.
                 Intent intent = new Intent(login.this, ResetPasswordActivity.class);
                 startActivity(intent);
 
             }
         });
 
-        // Adding click listener to register button.
         RegisterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                // Opening new user registration activity using intent on button click.
                 Intent intent = new Intent(login.this, Register.class);
                 startActivity(intent);
 
@@ -118,7 +113,6 @@ public class login extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        //removeAuthSateListner is used  in onStart function just for checking purposes,it helps in logging you out.
         mAuth.removeAuthStateListener(mAuthListner);
 
     }
@@ -155,6 +149,8 @@ public class login extends AppCompatActivity {
             return;
         }
 
+
+
         dialog.setMessage("Loging in please wait...");
         dialog.setIndeterminate(true);
         dialog.show();
@@ -176,7 +172,6 @@ public class login extends AppCompatActivity {
         });
 
     }
-    //This function helps in verifying whether the email is verified or not.
     private void checkIfEmailVerified(){
 
         FirebaseUser users=FirebaseAuth.getInstance().getCurrentUser();
