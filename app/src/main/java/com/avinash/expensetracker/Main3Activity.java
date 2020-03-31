@@ -56,12 +56,13 @@ public class Main3Activity extends AppCompatActivity {
                 Toast.makeText(Main3Activity.this, "Thanks for the" +" "+
                             String.valueOf(ratingBar.getRating())+" "+"star rating",
                         Toast.LENGTH_SHORT).show();
-                finish();
 
+                finish();
 
 
             }
 
         });
+
     }
 }

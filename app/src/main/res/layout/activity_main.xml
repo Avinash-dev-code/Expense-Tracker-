@@ -31,27 +31,28 @@
 
         </androidx.appcompat.widget.Toolbar>
 
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="542dp"
+            android:layout_marginTop="57dp"
+            android:background="#ffffff"
+            android:overScrollMode="ifContentScrolls">
+
+        </androidx.viewpager.widget.ViewPager>
+
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="68dp"
+
             app:layout_anchor="@+id/fab"
-            app:tabRippleColor="#6200ee"
             app:layout_anchorGravity="bottom|center"
-            app:tabIndicatorColor="#FFFFFF">
+            app:tabIndicatorColor="#6200ee"
+            app:tabRippleColor="#6200ee">
 
         </com.google.android.material.tabs.TabLayout>
-
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/container"
-            android:layout_width="match_parent"
-            android:layout_height="553dp"
-            android:background="#ffffff"
-            android:layout_marginTop="57dp"
-            android:overScrollMode="ifContentScrolls">
-
-        </androidx.viewpager.widget.ViewPager>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"
