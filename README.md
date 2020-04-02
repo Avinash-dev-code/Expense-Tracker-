@@ -45,12 +45,12 @@ Steps to run the app.<br>
 <img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/blob/master/Screenshots/s3.jpg"
 hspace="10"
 />
-<img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/blob/master/Screenshots/s4.jpg" hspace="10"
+<img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/blob/master/Screenshots/s4.jpg" 
 />
 <br>
 <img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/blob/master/Screenshots/8th.jpg" hspace="10"/>
-<img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/blob/master/Screenshots/s6.jpg/>
-<img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/blob/master/Screenshots/s5.jpg/>			       
+<img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/blob/master/Screenshots/s6.jpg/">
+<img height=500 width=275 src="https://github.com/Avinash-dev-code/Expense-Tracker-/blob/master/Screenshots/s5.jpg/">		       
 
 
 
